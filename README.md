@@ -1,14 +1,14 @@
-# Template: ngAdminSM
+# SM Template: ngAdmin
 Awesome angular+bootstrap admin template. Customizabled by SASS compiler.
 
 ## FEATURES
 - One top navbar, one collapsible sidebar and content area
-- angularJS + twitter's bootstrap 3.
-- Template is responsive and works very well on small screen sizes.
-- When browser's window width <768px then sidebar is collapsed.
-- When browser's window width <480 thensidebar is hidden
-- 100% pure AngularJS , bootstrap and CSS3
-- Tested and works well on Chrome 46, Firefox 36 and Opera 36
+- HTML 5 sematic tags: nav, main, aside, ...
+- angularJS + twitter's bootstrap 3
+- SASS compiler - scss files
+- Template is responsive and works very well on small screen sizes (tablets and smartphones).
+- Sidebar is hidden when browser's window width is <480.
+- Tested and works well on Chrome 46+, Firefox 36+ and Opera 36+.
 
 
 ## DEMO
