@@ -1,0 +1,114 @@
+/* ******************** SIDEBAR 1 COLLAPSED [''] ********************** */
+
+
+/* sidebars */
+#page-sidebars {
+	display: block;
+	position: fixed;
+	height: 100%;
+	/*background-color: #f0f0f0;*/
+	background-color: #fcfcfc;
+	width: 100px;
+}
+
+/* content */
+#page-content {
+	display: block;
+	margin-left: 50px;
+	background-color: transparent;
+	/*border: 2px solid yellow;*/
+	min-height: 450px;
+	padding-top: 0px;
+	-webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#page-content h1 {
+	color: Gray;
+	border-bottom: 2px dotted Gray;
+}
+
+/***** SIDEBAR 1 *****/
+#sidebar {
+	display: block;
+	position: fixed; /* this */
+	height: 100%; /* and this */
+	background-color: #2A3F54;
+	color: #f0f0f0;
+	width: 50px;
+	z-index: 1000;
+	-webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#sidebar button#sidebar-arrow {
+	float: right;
+	background-color: #2A3F54;
+	color: #f0f0f0;
+	border: 1px solid #f0f0f0;
+}
+#sidebar button#sidebar-arrow:hover {
+	background-color: #1B2433;
+}
+
+#sidebar > nav {
+	margin-top: 35px;
+}
+#sidebar > nav > ul {
+	list-style: none;
+}
+#sidebar > nav > ul > li {
+	line-height: 41px;
+	margin-left: -25px;
+}
+#sidebar > nav > ul > li > a {
+	color: #bbb;
+  font-size: 15px;
+  text-decoration: none;
+}
+#sidebar > nav > ul > li > a:hover {
+	color: #fff;
+}
+#sidebar > nav > ul > li > a > i {
+  font-size: 21px;
+}
+#sidebar > nav > ul > li > a > span {
+	display: none;
+	font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+  font-size: 15px;
+  margin-left: 8px;
+}
+
+
+
+
+/* ******************** SIDEBAR 1 EXPANDED ['active1'] ********************** */
+#wrapper.active #page-sidebars {
+	width: 250px;
+}
+#wrapper.active #sidebar {
+	width: 200px;
+}
+#wrapper.active #page-content {
+	margin-left: 200px;
+}
+#wrapper.active #sidebar button {
+	-ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+}
+#wrapper.active #sidebar > nav > ul > li > a > span { /* hide text when collapsed */
+	display: inline;
+}
+
+
+/* SIDEBAR COLLAPSE BUTTON */
+#sidebars-button > button {
+	z-index: 9999;
+	margin-right: 50px;
+	display: block;
+	color: green;
+}

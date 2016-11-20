@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Template ngAdminSM - dashboard</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="./css/bs-theme-slate.css"> -->
+	<link rel="stylesheet" type="text/css" href="./css/bs-theme-paper.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body ng-app="clientApp" id="home">
+
+	<!-- TOP NAVBAR -->
+	<nav class="navbar navbar-default" id="topnavbar">
+	<div class="container-fluid">
+
+		<!-- Navbar button -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#tnvbr">
+				<span class="sr-only">Toggle navigation</span>
+				<i class="fa fa-2x fa-angle-double-down"></i>
+			</button>
+			<a class="navbar-brand" href="#">Project Name</a>
+		</div>
+
+		<div class="navbar-header">
+			<a href="#" id="toggleSidebar" class="navbar-brand"><i class="fa fa-bars"></i></a>
+		</div>
+
+		<!-- Navbar -->
+		<div class="collapse navbar-collapse" id="tnvbr">
+			<ul class="nav navbar-nav">
+				<li><a href="https://smikodanic.github.io/template-ng-adminsm/login.html">Login Form</a></li>
+				<li><a href="https://smikodanic.github.io/template-ng-adminsm/registration.html">Registration Form</a></li>
+				<li class="active"><a href="#">Active Link</a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Mark Marković <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Profile</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Log Out <i class="fa fa-sign-out pull-right"></i></a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+	</nav>
+	<!-- /TOP NAVBAR -->
+
+	<!-- CONTENT -->
+	<main class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+					<h1>Heading</h1>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque nobis error facere maxime officia
+					doloremque illum odit, neque consectetur veritatis aperiam atque, aliquid ducimus explicabo, odio, ipsa in quod.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque nobis error facere maxime officia
+					doloremque illum odit, neque consectetur veritatis aperiam atque, aliquid ducimus explicabo, odio, ipsa in quod.
+					<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque nobis error facere maxime officia
+					doloremque illum odit, neque consectetur veritatis aperiam atque, aliquid ducimus explicabo, odio, ipsa in quod.
+
+					<br><br><br>
+					<h3>ELEMENTS</h3>
+					<p class="alert alert-warning" style="width:70%">
+						<small>SIDEBAR STATES</small>
+						<br><b>#sidebar:</b> {{sideBar}}
+					</p>
+
+					<br>
+					<p class="bs-component">
+						<a href="#" class="btn btn-default">Default</a>
+						<a href="#" class="btn btn-primary">Primary</a>
+						<a href="#" class="btn btn-success">Success</a>
+						<a href="#" class="btn btn-info">Info</a>
+						<a href="#" class="btn btn-warning">Warning</a>
+						<a href="#" class="btn btn-danger">Danger</a>
+						<a href="#" class="btn btn-link">Link</a>
+					</p>
+
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+			</div>
+		</div>
+	</main>
+	<!-- /CONTENT -->
+
+
+
+	<!-- JS libs -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+
+	<!-- Angular app -->
+	<script src="ng.js"></script>
+
+
+</body>
+</html>
