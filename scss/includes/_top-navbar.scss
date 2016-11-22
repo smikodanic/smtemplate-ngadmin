@@ -1,13 +1,20 @@
-.navbar {
-	& .sidebar-button {
-		color: #aaa;
+#topnavbar {
+	& .navbar {
+		& .sidebar-button {
+			color: #aaa;
+		}
 	}
-}
 
-#topnavbar .nav.navbar-nav li:hover {
-	background-color: #eee;
-}
+	& .nav.navbar-nav li:hover {
+		background-color: #eee;
+	}
 
-.navbar-header > button > .fa {
-	font-size: 15px;
+	& .navbar-header > button > .fa {
+		font-size: 21px;
+
+		&.in {
+			transform: rotate(180deg);
+		}
+	}
+
 }

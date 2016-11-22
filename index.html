@@ -10,7 +10,6 @@
 	<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
 	<!-- <link rel="stylesheet" type="text/css" href="./css/bs-theme-slate.css"> -->
 	<link rel="stylesheet" type="text/css" href="./css/bs-theme-paper.css">
-	<link rel="stylesheet" type="text/css" href="./css/top-navbar.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -18,14 +17,14 @@
 <body>
 
 	<!-- TOP NAVBAR -->
-	<nav class="navbar navbar-default" id="topnavbar">
+	<nav class="navbar navbar-default" id="topnavbar" ng-controller="topnavbarCtrl">
 	<div class="container-fluid">
 
 		<!-- Navbar button -->
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#tnvbr">
+			<button type="button" class="navbar-toggle" ng-click="toggleCollapsingMenu()">
 				<span class="sr-only">Toggle navigation</span>
-				<i class="fa fa-angle-double-down"></i>
+				<i class="fa fa-angle-double-down {{inClass}}"></i>
 			</button>
 			<a href="#" class="navbar-brand sidebar-button"><i class="fa fa-bars"></i></a>
 			<a href="#" class="navbar-brand">Project Name</a>
@@ -33,10 +32,10 @@
 
 
 		<!-- Navbar -->
-		<div class="collapse navbar-collapse" id="tnvbr">
+		<div class="collapse navbar-collapse {{inClass}}">
 			<ul class="nav navbar-nav navbar-right hidden-xs">
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Mark Marković <span class="caret"></span></a>
+				<li class="dropdown {{openClass}}">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#" ng-click="toggleDropdownMenu()">Mark Marković <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="#">Profile</a></li>
 						<li class="divider"></li>
@@ -109,8 +108,8 @@
 
 
 	<!-- JS libs -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
 
 	<!-- Angular app -->

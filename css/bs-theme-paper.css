@@ -8126,14 +8126,15 @@ input[type="checkbox"]:disabled:checked:after,
   color: inherit;
 }
 
-.navbar .sidebar-button {
+#topnavbar .navbar .sidebar-button {
   color: #aaa;
 }
-
 #topnavbar .nav.navbar-nav li:hover {
   background-color: #eee;
 }
-
-.navbar-header > button > .fa {
-  font-size: 15px;
+#topnavbar .navbar-header > button > .fa {
+  font-size: 21px;
+}
+#topnavbar .navbar-header > button > .fa.in {
+  transform: rotate(180deg);
 }
