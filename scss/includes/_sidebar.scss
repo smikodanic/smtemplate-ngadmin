@@ -1,0 +1,33 @@
+#page-sidebar {
+	display: block;
+	position: fixed; /* this */
+	height: 100%; /* and this makes height 100%*/
+	top: $navbar-height;
+	background-color: #1B2433;
+	color: #f0f0f0;
+	width: $sidebar-width;
+	z-index: $sidebar-z;
+	border-top: $sidebar-border-top;
+	padding: 8px;
+	overflow-y: scroll;
+
+	& .row {
+		overflow-y: visible;
+	}
+
+}
+
+#page-content {
+	background-color: #F1F3F6;
+	position: absolute;
+	top: $navbar-height;
+	left: $sidebar-width-noscrollbar;
+	z-index: $sidebar-z + 1;
+	border: $sidebar-border-top;
+	overflow-x: scroll;
+
+	-webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}

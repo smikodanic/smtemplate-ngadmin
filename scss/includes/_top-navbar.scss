@@ -1,4 +1,5 @@
 #topnavbar {
+
 	& .navbar {
 		& .sidebar-button {
 			color: #aaa;
@@ -15,6 +16,10 @@
 		&.in {
 			transform: rotate(180deg);
 		}
+	}
+
+	& .nav.navbar-nav.navbar-right {
+		margin-right: 5px;
 	}
 
 }

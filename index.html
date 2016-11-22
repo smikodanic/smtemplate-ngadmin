@@ -17,7 +17,7 @@
 <body>
 
 	<!-- TOP NAVBAR -->
-	<nav class="navbar navbar-default" id="topnavbar" ng-controller="topnavbarCtrl">
+	<nav class="navbar navbar-default navbar-fixed-top" id="topnavbar" ng-controller="topnavbarCtrl">
 	<div class="container-fluid">
 
 		<!-- Navbar button -->
@@ -33,9 +33,10 @@
 
 		<!-- Navbar -->
 		<div class="collapse navbar-collapse {{inClass}}">
+
 			<ul class="nav navbar-nav navbar-right hidden-xs">
 				<li class="dropdown {{openClass}}">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#" ng-click="toggleDropdownMenu()">Mark Marković <span class="caret"></span></a>
+					<a class="dropdown-toggle" href="#" ng-click="toggleDropdownMenu()">Mark Marković <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="#">Profile</a></li>
 						<li class="divider"></li>
@@ -58,15 +59,45 @@
 				<li class="active"><a href="#">Active Link</a></li>
 				<li class="divider"></li>
 				<li><a href="#"><i class="fa fa-sign-out"></i> Log Out</a></li>
-			</ul>
+
 		</div>
 
 	</div>
 	</nav>
 	<!-- /TOP NAVBAR -->
 
+
+	<!-- SIDEBAR -->
+	<aside id="page-sidebar">
+		<div class="row">
+			<div class="col-sm-12">
+				<h3>HEADER</h3>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam numquam, possimus voluptate.
+				Dolor, iure, delectus. Obcaecati vitae, quia eligendi sint quisquam labore, porro voluptate quis
+				dolore, ab enim nam mollitia.
+				<br><br>
+				<br><br>
+				a
+				<br><br>
+				<br><br>
+				<br><br>
+				b
+				<br><br>
+				<br><br>
+				<br><br>
+				c
+				<br><br>
+				<br><br>
+				-- end --
+				<!-- <br><br><br> -->
+			</div>
+		</div>
+	</aside>
+	<!-- /SIDEBAR -->
+
+
 	<!-- CONTENT -->
-	<main class="container-fluid">
+	<main id="page-content" class="container-fluid">
 		<div class="row">
 			<div class="col-sm-12">
 					<h1>Heading</h1>
@@ -84,7 +115,9 @@
 						<br><b>#sidebar:</b> {{sideBar}}
 					</p>
 
-					<br>
+
+
+					<br><br>
 					<p class="bs-component">
 						<a href="#" class="btn btn-default">Default</a>
 						<a href="#" class="btn btn-primary">Primary</a>
@@ -95,11 +128,31 @@
 						<a href="#" class="btn btn-link">Link</a>
 					</p>
 
+
+
+					<br><br>
+					<h3>TABS</h3>
+					<!-- Tab Nav -->
+					<ul class="nav nav-tabs">
+						<li><a href="#a" data-toggle="tab">a</a></li>
+						<li class="active"><a href="#b" data-toggle="tab">b</a></li>
+						<li><a href="#c" data-toggle="tab">c</a></li>
+					</ul>
+
+					<!-- Tab Content -->
+					<div class="tab-content">
+						<div class="tab-pane fade" id="a">Nullam hendrerit justo non leo aliquet imperdiet. Etiam in sagittis lectus. Suspendisse ultrices placerat accumsan. Mauris quis dapibus orci. In dapibus velit blandit pharetra tincidunt. Quisque non sapien nec lacus condimentum facilisis ut iaculis enim. Sed viverra interdum bibendum. Donec ac sollicitudin dolor. Sed fringilla vitae lacus at rutrum. Phasellus congue vestibulum ligula sed consequat.Vestibulum consectetur scelerisque lacus, ac fermentum lorem convallis sed. Nam odio tortor, dictum quis malesuada at, pellentesque vitae orci. Vivamus elementum, felis eu auctor lobortis, diam velit egestas lacus, quis fermentum metus ante quis urna. Sed at facilisis libero. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum bibendum blandit dolor. Nunc orci dolor, molestie nec nibh in, hendrerit tincidunt ante. Vivamus sem augue, hendrerit non sapien in, mollis ornare augue.</div>
+						<div class="tab-pane fade in active" id="b">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ipsam corporis obcaecati quas dolores vitae alias quae suscipit. Facilis et eius itaque nihil commodi veniam debitis illo iure sed minima!</div>
+						<div class="tab-pane fade" id="c">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Ut tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit at lacus blandit, commodo iaculis justo viverra. Etiam vitae est arcu. Mauris vel congue dolor. Aliquam eget mi mi. Fusce quam tortor, commodo ac dui quis, bibendum viverra erat. Maecenas mattis lectus enim, quis tincidunt dui molestie euismod. Curabitur et diam tristique, accumsan nunc eu, hendrerit tellus.</div>
+					</div>
+
 					<br>
 					<br>
 					<br>
 					<br>
 					<br>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem autem consectetur delectus, consequatur ullam reiciendis. Fugiat minus nihil, accusantium quis hic, nulla quas reiciendis! Reiciendis doloribus, natus deleniti optio provident!
+					<br>-- END --
 			</div>
 		</div>
 	</main>
@@ -108,8 +161,8 @@
 
 
 	<!-- JS libs -->
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	// <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
 
 	<!-- Angular app -->

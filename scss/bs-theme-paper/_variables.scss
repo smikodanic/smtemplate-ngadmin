@@ -868,3 +868,14 @@ $dl-horizontal-offset:        $component-offset-horizontal !default;
 $dl-horizontal-breakpoint:    $grid-float-breakpoint !default;
 //** Horizontal line color.
 $hr-border:                   $gray-lighter !default;
+
+
+//== Sidebar
+//
+//##
+
+$sidebar-width: 170px;
+$sidebar-width-noscrollbar: 150px;
+$sidebar-z: 1000;
+$sidebar-border-top: 2px solid #ccc;
+
