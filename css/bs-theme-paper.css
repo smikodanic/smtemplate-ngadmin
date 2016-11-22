@@ -8149,13 +8149,13 @@ input[type="checkbox"]:disabled:checked:after,
   height: 100%;
   /* and this makes height 100%*/
   top: 50px;
-  background-color: #1B2433;
-  color: #f0f0f0;
   width: 170px;
   z-index: 1000;
-  border-top: 2px solid #ccc;
+  border-top: 1px solid #ccc;
   padding: 8px;
   overflow-y: scroll;
+  background-color: #fcfcfc;
+  color: #333;
 }
 #page-sidebar .row {
   overflow-y: visible;
@@ -8167,7 +8167,7 @@ input[type="checkbox"]:disabled:checked:after,
   top: 50px;
   left: 150px;
   z-index: 1001;
-  border: 2px solid #ccc;
+  border: 1px solid #ccc;
   overflow-x: scroll;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -8176,4 +8176,9 @@ input[type="checkbox"]:disabled:checked:after,
 }
 #page-content.hidesidebar {
   left: 0;
+}
+#page-content #toggleSidebar {
+  margin-top: 8px;
+  font-size: 15px;
+  outline: none;
 }

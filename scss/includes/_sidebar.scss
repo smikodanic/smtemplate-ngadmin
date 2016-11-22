@@ -3,13 +3,13 @@
 	position: fixed; /* this */
 	height: 100%; /* and this makes height 100%*/
 	top: $navbar-height;
-	background-color: #1B2433;
-	color: #f0f0f0;
 	width: $sidebar-width;
 	z-index: $sidebar-z;
 	border-top: $sidebar-border-top;
 	padding: 8px;
 	overflow-y: scroll;
+	background-color: #fcfcfc;
+	color: #333;
 
 	& .row {
 		overflow-y: visible;
@@ -33,5 +33,11 @@
 
 	&.hidesidebar {
 		left: 0;
+	}
+
+	& #toggleSidebar {
+		margin-top: 8px;
+		font-size: 15px;
+		outline: none; //removing border when button is focused
 	}
 }
