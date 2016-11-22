@@ -36,7 +36,7 @@ gulp.task('scss', function () {
     'use strict';
     gulp
         .src([
-            'scss/bs-theme-slate.scss',
+            // 'scss/bs-theme-slate.scss',
             'scss/bs-theme-paper.scss'
         ])
         .pipe(compass({

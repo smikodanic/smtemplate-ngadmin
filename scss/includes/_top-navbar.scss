@@ -1,0 +1,13 @@
+.navbar {
+	& .sidebar-button {
+		color: #aaa;
+	}
+}
+
+#topnavbar .nav.navbar-nav li:hover {
+	background-color: #eee;
+}
+
+.navbar-header > button > .fa {
+	font-size: 15px;
+}
