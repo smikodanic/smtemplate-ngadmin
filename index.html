@@ -26,7 +26,6 @@
 				<span class="sr-only">Toggle navigation</span>
 				<i class="fa fa-angle-double-down {{inClass}}"></i>
 			</button>
-			<a href="#" class="navbar-brand sidebar-button"><i class="fa fa-bars"></i></a>
 			<a href="#" class="navbar-brand">Project Name</a>
 		</div>
 
@@ -97,7 +96,13 @@
 
 
 	<!-- CONTENT -->
-	<main id="page-content" class="container-fluid">
+	<main id="page-content" ng-controller="mainCtrl" class="container-fluid {{hidesidebarClass}}">
+		<div class="row">
+			<div class="col-sm-12">
+				<button class="btn btn-md btn-link" ng-click="toggleSidebar()"><i class="fa fa-bars"></i></button>
+			</div>
+		</div>
+
 		<div class="row">
 			<div class="col-sm-12">
 					<h1>Heading</h1>

@@ -8174,3 +8174,6 @@ input[type="checkbox"]:disabled:checked:after,
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+#page-content.hidesidebar {
+  left: 0;
+}
