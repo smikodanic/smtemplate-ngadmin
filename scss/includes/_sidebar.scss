@@ -159,6 +159,10 @@
 
 						/*** GRANDCHILD MENU ***/
 						&.grandchild { //li.grandchild
+							& > a {
+								text-transform: uppercase;
+							}
+
 							& > ul {
 								// border: 1px solid red;
 								list-style: none;

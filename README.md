@@ -18,11 +18,7 @@ Awesome angular+bootstrap admin template. Customizabled by SASS compiler.
 
 
 ## DEMO
-[Admin Panel](https://smikodanic.github.io/smtemplate-ngadmin/)
-
-[Login Form](https://smikodanic.github.io/smtemplate-ngadmin/login.html)
-
-[Basic Elements](https://smikodanic.github.io/smtemplate-ngadmin/elements.html)
+[Click here](https://smikodanic.github.io/smtemplate-ngadmin/) to preview the template.
 
 
 

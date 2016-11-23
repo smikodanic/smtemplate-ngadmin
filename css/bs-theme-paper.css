@@ -8271,6 +8271,9 @@ input[type="checkbox"]:disabled:checked:after,
   font-weight: 400;
   padding: 8px 0px;
 }
+#page-sidebar > .menu-section > ul > li > ul.child > li.grandchild > a {
+  text-transform: uppercase;
+}
 #page-sidebar > .menu-section > ul > li > ul.child > li.grandchild > ul {
   list-style: none;
   padding-left: 13px;

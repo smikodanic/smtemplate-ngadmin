@@ -76,14 +76,14 @@
 			<ul>
 				<li class="active"> <!-- class="active" => menu opened -->
 					<span class="fa fa-cog"></span>
-					<a ng-click="toggleChild($event)">Settings &amp; Info <span class="fa fa-chevron-down"></span></a>
+					<a ng-click="toggleChild($event)">Child Menu <span class="fa fa-chevron-down"></span></a>
 					<ul class="child">
 						<li><a href="#">Dashboard</a></li>
 						<li><a href="#">Very long text will apply CSS text-overflow: ellipsis; e.g. text will end with 3 dots.</a></li>
 						<li class="active"><a href="#">Active Page</a></li> <!-- li class="active" => active page -->
 
 						<!-- grandchild menu -->
-						<li class="grandchild"> <!-- class="grandchild active" => menu opened -->
+						<li class="grandchild active"> <!-- class="grandchild active" => menu opened -->
 							<a ng-click="toggleGrandChild($event)"><span class="fa fa-chevron-down"></span> Grandchild menu</a>
 							<ul>
 								<li><a href="#">Edit Details</a></li>
@@ -110,6 +110,7 @@
 					<a ng-click="toggleChild($event)">User <span class="fa fa-chevron-down"></span></a>
 					<ul class="child">
 						<li><a href="#">Profile</a></li>
+						<li class="divider"></li>
 						<li><a href="#">Likes</a></li>
 						<li><a href="#">Friends</a></li>
 						<li><a href="#">Photos</a></li>
