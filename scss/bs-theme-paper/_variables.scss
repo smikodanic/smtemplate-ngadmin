@@ -874,8 +874,9 @@ $hr-border:                   $gray-lighter !default;
 //
 //##
 
-$sidebar-width: 170px;
-$sidebar-width-noscrollbar: 150px;
+$sidebar-width: 180; //px
+$sidebar-width-menusection: $sidebar-width - 18; //px
 $sidebar-z: 1000;
 $sidebar-border-top: 1px solid #ccc;
+$content-background: #F1F3F6;
 

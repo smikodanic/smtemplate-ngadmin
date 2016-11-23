@@ -32,3 +32,17 @@ clientApp.controller('mainCtrl', function ($scope) {
             : '';
     };
 });
+
+
+clientApp.controller('sidebarCtrl', function ($scope) {
+    'use strict';
+
+    $scope.toggleChild = function ($event) {
+        // console.log(angular.element($event.currentTarget).parent());
+        if (angular.element($event.currentTarget).parent('li').hasClass('active')) {
+            angular.element($event.currentTarget).parent('li').removeClass('active');
+        } else {
+            angular.element($event.currentTarget).parent('li').addClass('active');
+        }
+    };
+});

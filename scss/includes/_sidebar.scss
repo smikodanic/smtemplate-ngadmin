@@ -1,27 +1,8 @@
-#page-sidebar {
-	display: block;
-	position: fixed; /* this */
-	height: 100%; /* and this makes height 100%*/
-	top: $navbar-height;
-	width: $sidebar-width;
-	z-index: $sidebar-z;
-	border-top: $sidebar-border-top;
-	padding: 8px;
-	overflow-y: scroll;
-	background-color: #fcfcfc;
-	color: #333;
-
-	& .row {
-		overflow-y: visible;
-	}
-
-}
-
 #page-content {
-	background-color: #F1F3F6;
+	background-color: $content-background;
 	position: absolute;
 	top: $navbar-height;
-	left: $sidebar-width-noscrollbar;
+	left: $sidebar-width - 13 + unquote("px");
 	z-index: $sidebar-z + 1;
 	border: $sidebar-border-top;
 	overflow-x: scroll;
@@ -40,4 +21,129 @@
 		font-size: 15px;
 		outline: none; //removing border when button is focused
 	}
+}
+
+
+#page-sidebar {
+	display: block;
+	position: fixed; /* this */
+	height: 100%; /* and this makes height 100%*/
+	top: $navbar-height;
+	width: $sidebar-width + unquote("px");
+	z-index: $sidebar-z;
+	border-top: $sidebar-border-top;
+	padding: 8px;
+	overflow-y: scroll;
+	background-color: #fcfcfc;
+	color: #333;
+
+	& .row {
+		overflow-y: visible;
+	}
+
+
+	& > .menu-section {
+
+		& > h1,h2,h3,h4,h5 {
+			font-size: 21px;
+			color: #333;
+			margin-bottom: 8px;
+			text-align: center;
+		}
+
+		& > ul {
+			list-style: none;
+
+			& > li {
+				border-bottom: 1px solid #ccc;
+				position: relative;
+				left: -45px;
+				width: $sidebar-width-menusection + unquote("px");
+				background-color: #F7F9FA;
+				padding: 8px 0px;
+
+				&:first-child {
+					border-top: 1px solid #ccc;
+				}
+
+				&:hover {
+					background-color: #FFF;
+					cursor: pointer;
+				}
+
+
+				// <ul class="active"> => opened child menu
+				&.active {
+					background-color: $content-background;
+
+					& > ul.child {
+						opacity: 1;
+						height: 80px; //animate
+					}
+
+					& > a {
+						& > span.fa.fa-chevron-down {
+							transform: rotate(180deg);
+						}
+					}
+				}
+
+
+				& > a {
+					color: #6a6c6f;
+					font-size: 13px;
+					font-weight: 700;
+					text-transform: uppercase;
+
+
+					& > span {
+						margin: 5px 8px;
+						float: right;
+					}
+				}
+
+
+				& > ul.child {
+					list-style: none;
+					opacity: 0;
+					height: 0px; //animate
+					-webkit-transition: all 0.9s ease;
+  				-moz-transition: all 0.9s ease;
+  				-o-transition: all 0.9s ease;
+  				transition: all 0.9s ease;
+
+
+					& > li {
+  					// border: 1px solid red;
+						position: relative;
+						left: -30px;
+						width: $sidebar-width-menusection + unquote("px");
+						margin-right: 10px;
+						/*shorten text with 3 dots: ellipses*/
+						white-space: nowrap;
+  					overflow: hidden;
+  					text-overflow: ellipsis;
+
+  					&:last-child {
+							margin-bottom: 13px;
+						}
+
+						& > a {
+							color: #6a6c6f; //active #34495e
+							font-size: 13px;
+							font-weight: 400;
+							padding: 8px 0px;
+
+						}
+					}
+				}
+
+			}
+
+		}
+
+	}
+
+
+
 }
