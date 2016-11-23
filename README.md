@@ -4,10 +4,12 @@ Awesome angular+bootstrap admin template. Customizabled by SASS compiler.
 
 
 ## FEATURES
-- Very fast template
 - One top navbar, one collapsible sidebar and content area
+- Three level sidebar (child and grandchild menu)
+- Sidebar divider line
+- Pure CSS animations (jQuery not required)
 - HTML 5 sematic tags: nav, main, aside, ...
-- angularJS + twitter's bootstrap 3
+- angularJS + twitter's bootstrap 3 (other libraries are not required)
 - SASS compiler - scss files
 - Template is responsive and works very well on small screen sizes (tablets and smartphones).
 - Sidebar is hidden when browser's window width is <480.
