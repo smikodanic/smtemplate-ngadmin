@@ -8313,11 +8313,11 @@ input[type="checkbox"]:disabled:checked:after,
 
 #loginpage {
   background-color: #F1F3F6 !important;
+  padding: 34px 0px;
 }
 #loginpage h4 {
   text-align: center;
   text-transform: uppercase;
-  margin-top: 50px;
   color: #aaa;
   text-shadow: 2px 2px #fcfcfc;
 }
