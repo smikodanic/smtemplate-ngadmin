@@ -8311,21 +8311,24 @@ input[type="checkbox"]:disabled:checked:after,
   transform: rotate(-90deg);
 }
 
-#loginpage {
+#login-register {
   background-color: #F1F3F6 !important;
   padding: 34px 0px;
 }
-#loginpage h4 {
+#login-register h4 {
   text-align: center;
   text-transform: uppercase;
   color: #aaa;
   text-shadow: 2px 2px #fcfcfc;
 }
-#loginpage form {
+#login-register form {
   background-color: #fcfcfc;
   padding: 13px;
   border: 1px solid #ccc;
 }
-#loginpage .centered {
+#login-register .centered {
   text-align: center;
+}
+#login-register .msg {
+  margin: 5px 13px;
 }
