@@ -77,8 +77,8 @@
 					background-color: $content-background;
 
 					& > ul.child {
-						opacity: 1;
-						height: 80px; //animate
+						opacity: 1; //animate
+						height: 100%; //animate
 					}
 
 					& > a {
@@ -105,12 +105,12 @@
 
 				& > ul.child {
 					list-style: none;
-					opacity: 0;
+					opacity: 0; //animate
 					height: 0px; //animate
-					-webkit-transition: all 0.9s ease;
-  				-moz-transition: all 0.9s ease;
-  				-o-transition: all 0.9s ease;
-  				transition: all 0.9s ease;
+					-webkit-transition: all 0.4s ease;
+  				-moz-transition: all 0.4s ease;
+  				-o-transition: all 0.4s ease;
+  				transition: all 0.4s ease;
 
 
 					& > li {
@@ -125,7 +125,14 @@
   					text-overflow: ellipsis;
 
   					&:last-child {
-							margin-bottom: 13px;
+							margin-bottom: 8px;
+						}
+
+						&.active {
+							& > a {
+								color: #111;
+								font-weight: bold;
+							}
 						}
 
 						& > a {

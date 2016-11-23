@@ -8211,7 +8211,7 @@ input[type="checkbox"]:disabled:checked:after,
 }
 #page-sidebar > .menu-section > ul > li.active > ul.child {
   opacity: 1;
-  height: 80px;
+  height: 100%;
 }
 #page-sidebar > .menu-section > ul > li.active > a > span.fa.fa-chevron-down {
   transform: rotate(180deg);
@@ -8230,10 +8230,10 @@ input[type="checkbox"]:disabled:checked:after,
   list-style: none;
   opacity: 0;
   height: 0px;
-  -webkit-transition: all 0.9s ease;
-  -moz-transition: all 0.9s ease;
-  -o-transition: all 0.9s ease;
-  transition: all 0.9s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 #page-sidebar > .menu-section > ul > li > ul.child > li {
   position: relative;
@@ -8246,7 +8246,11 @@ input[type="checkbox"]:disabled:checked:after,
   text-overflow: ellipsis;
 }
 #page-sidebar > .menu-section > ul > li > ul.child > li:last-child {
-  margin-bottom: 13px;
+  margin-bottom: 8px;
+}
+#page-sidebar > .menu-section > ul > li > ul.child > li.active > a {
+  color: #111;
+  font-weight: bold;
 }
 #page-sidebar > .menu-section > ul > li > ul.child > li > a {
   color: #6a6c6f;
