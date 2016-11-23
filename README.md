@@ -24,6 +24,20 @@ Awesome angular+bootstrap admin template. Customizabled by SASS compiler.
 Also you can see [Login](https://smikodanic.github.io/smtemplate-ngadmin/login.html) template.
 
 
+## INSTALLATION
+After clonning it's very easy to further develop this template. Do the following:
+
+```html
+$ git clone git@github.com:smikodanic/smtemplate-ngadmin.git
+$ npm install
+$ bower install
+$ gulp
+```
+
+- NodeJS server started on port 8080
+- SASS compiler compiles scss files in /scss/ folder creating one /css/bs-theme-paper.css file.
+
+
 
 ##LICENSE
 
