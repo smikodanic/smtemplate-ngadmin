@@ -8304,6 +8304,6 @@ input[type="checkbox"]:disabled:checked:after,
   opacity: 1;
   height: 100%;
 }
-#page-sidebar > .menu-section > ul > li > ul.child > li.grandchild.active > ul > li > a > span.fa.fa-chevron-down {
+#page-sidebar > .menu-section > ul > li > ul.child > li.grandchild.active > a > span.fa.fa-chevron-down {
   transform: rotate(-90deg);
 }

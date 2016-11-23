@@ -204,32 +204,20 @@
 								& > ul {
 									opacity: 1; //animate
 									height: 100%; //animate
+								}
 
-									& > li {
-
-										& > a {
-
-											& > span.fa.fa-chevron-down {
-														transform: rotate(-90deg);
-											}
-										}
-
-									}
-
+								& > a > span.fa.fa-chevron-down {
+									transform: rotate(-90deg);
 								}
 
 							}
 
-
-
 						}
 
 
-
 					}
+
 				}
-
-
 
 
 			}
@@ -237,7 +225,5 @@
 		}
 
 	}
-
-
 
 }
