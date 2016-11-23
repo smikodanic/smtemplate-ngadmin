@@ -1,0 +1,21 @@
+#loginpage {
+	background-color: $content-background !important;
+
+	& h4 {
+		text-align: center;
+		text-transform: uppercase;
+		margin-top: 50px;
+		color: #aaa;
+		text-shadow: 2px 2px #fcfcfc;
+	}
+
+	& form {
+		background-color: #fcfcfc;
+		padding: 13px;
+		border: 1px solid #ccc;
+	}
+
+	.centered {
+		text-align: center;
+	}
+}

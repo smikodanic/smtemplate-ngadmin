@@ -4,6 +4,7 @@ Awesome angular+bootstrap admin template. Customizabled by SASS compiler.
 
 
 ## FEATURES
+- 100% pure AngularJS template. jQuery not required !!!
 - One top navbar, one collapsible sidebar and content area
 - Three level sidebar (child and grandchild menu)
 - Sidebar divider line
@@ -19,6 +20,8 @@ Awesome angular+bootstrap admin template. Customizabled by SASS compiler.
 
 ## DEMO
 [Click here](https://smikodanic.github.io/smtemplate-ngadmin/) to preview the template.
+
+Also you can see [Login](https://smikodanic.github.io/smtemplate-ngadmin/login.html) template.
 
 
 

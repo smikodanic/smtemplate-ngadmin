@@ -8310,3 +8310,22 @@ input[type="checkbox"]:disabled:checked:after,
 #page-sidebar > .menu-section > ul > li > ul.child > li.grandchild.active > a > span.fa.fa-chevron-down {
   transform: rotate(-90deg);
 }
+
+#loginpage {
+  background-color: #F1F3F6 !important;
+}
+#loginpage h4 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 50px;
+  color: #aaa;
+  text-shadow: 2px 2px #fcfcfc;
+}
+#loginpage form {
+  background-color: #fcfcfc;
+  padding: 13px;
+  border: 1px solid #ccc;
+}
+#loginpage .centered {
+  text-align: center;
+}
