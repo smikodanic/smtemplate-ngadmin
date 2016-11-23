@@ -8146,7 +8146,7 @@ input[type="checkbox"]:disabled:checked:after,
   background-color: #F1F3F6;
   position: absolute;
   top: 50px;
-  left: 167px;
+  left: 177px;
   z-index: 1001;
   border: 1px solid #ccc;
   overflow-x: scroll;
@@ -8171,7 +8171,7 @@ input[type="checkbox"]:disabled:checked:after,
   height: 100%;
   /* and this makes height 100%*/
   top: 50px;
-  width: 180px;
+  width: 190px;
   z-index: 1000;
   border-top: 1px solid #ccc;
   padding: 8px;
@@ -8195,7 +8195,7 @@ input[type="checkbox"]:disabled:checked:after,
   border-bottom: 1px solid #ccc;
   position: relative;
   left: -45px;
-  width: 162px;
+  width: 172px;
   background-color: #F7F9FA;
   padding: 8px 0px;
 }
@@ -8215,6 +8215,11 @@ input[type="checkbox"]:disabled:checked:after,
 }
 #page-sidebar > .menu-section > ul > li.active > a > span.fa.fa-chevron-down {
   transform: rotate(180deg);
+}
+#page-sidebar > .menu-section > ul > li > .fa {
+  color: Gray;
+  font-size: larger;
+  margin-right: 5px;
 }
 #page-sidebar > .menu-section > ul > li > a {
   color: #6a6c6f;
@@ -8238,7 +8243,7 @@ input[type="checkbox"]:disabled:checked:after,
 #page-sidebar > .menu-section > ul > li > ul.child > li {
   position: relative;
   left: -30px;
-  width: 162px;
+  width: 172px;
   margin-right: 10px;
   /*shorten text with 3 dots: ellipses*/
   white-space: nowrap;
