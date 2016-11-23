@@ -74,6 +74,7 @@
 
 			<ul>
 				<li class="active"> <!-- class="active" -->
+					<span class="fa fa-cog"></span>
 					<a ng-click="toggleChild($event)">Settings &amp; Info <span class="fa fa-chevron-down"></span></a>
 					<ul class="child">
 						<li><a href="#">Dashboard</a></li>
@@ -82,11 +83,21 @@
 				</li>
 
 				<li>
-					<a ng-click="toggleChild($event)">MongoDB Module<span class="fa fa-chevron-down"></span></a>
+					<a ng-click="toggleChild($event)">MongoDB Module <span class="fa fa-chevron-down"></span></a>
 					<ul class="child">
 						<li><a href="#">Databases</a></li>
 						<li><a href="#">Collections</a></li>
 						<li><a href="#">Fields</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<span class="fa fa-user"></span>
+					<a ng-click="toggleChild($event)">User <span class="fa fa-chevron-down"></span></a>
+					<ul class="child">
+						<li><a href="#">Profile</a></li>
+						<li><a href="#">Link 1</a></li>
+						<li><a href="#">Link 2</a></li>
 					</ul>
 				</li>
 
