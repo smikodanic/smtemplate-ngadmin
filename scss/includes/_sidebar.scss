@@ -1,11 +1,11 @@
 #page-content {
 	background-color: $content-background;
-	position: absolute;
+	position: relative;
 	top: $navbar-height;
 	left: $sidebar-width - 13 + unquote("px");
 	z-index: $sidebar-z + 1;
 	border: $sidebar-border-top;
-	overflow-x: scroll;
+	min-height: 800px;
 
 	-webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -14,6 +14,7 @@
 
 	&.hidesidebar {
 		left: 0;
+		width: 100%;
 	}
 
 	& #toggleSidebar {

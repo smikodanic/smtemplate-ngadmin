@@ -8144,12 +8144,12 @@ input[type="checkbox"]:disabled:checked:after,
 
 #page-content {
   background-color: #F1F3F6;
-  position: absolute;
+  position: relative;
   top: 50px;
   left: 177px;
   z-index: 1001;
   border: 1px solid #ccc;
-  overflow-x: scroll;
+  min-height: 800px;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -8157,6 +8157,7 @@ input[type="checkbox"]:disabled:checked:after,
 }
 #page-content.hidesidebar {
   left: 0;
+  width: 100%;
 }
 #page-content #toggleSidebar {
   margin-top: 8px;

@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html ng-app="clientApp">
+<head>
+	<meta charset="UTF-8">
+	<title>SM Template ngAdmin - dashboard</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="./css/bs-theme-slate.css"> -->
+	<link rel="stylesheet" type="text/css" href="./css/bs-theme-paper.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+	<!-- TOP NAVBAR -->
+	<nav class="navbar navbar-default navbar-fixed-top" id="topnavbar" ng-controller="topnavbarCtrl">
+	<div class="container-fluid">
+
+		<!-- Navbar button -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" ng-click="toggleCollapsingMenu()">
+				<span class="sr-only">Toggle navigation</span>
+				<i class="fa fa-angle-double-down {{inClass}}"></i>
+			</button>
+			<a href="#" class="navbar-brand">Project Name</a>
+		</div>
+
+
+		<!-- Navbar -->
+		<div class="collapse navbar-collapse {{inClass}}">
+
+			<ul class="nav navbar-nav navbar-right hidden-xs">
+				<li class="dropdown {{openClass}}">
+					<a class="dropdown-toggle" href="#" ng-click="toggleDropdownMenu()">Mark Marković <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Profile</a></li>
+						<li class="divider"></li>
+						<li><a href="login.html">Login Form</a></li>
+						<li><a href="registration.html">Registration Form</a></li>
+						<li><a href="elements.html">Elements</a></li>
+						<li class="active"><a href="#">Active Link</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Log Out <i class="fa fa-sign-out pull-right"></i></a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<ul class="nav navbar-nav visible-xs-7 hidden-sm hidden-md hidden-lg">
+				<li><a href="#">Profile</a></li>
+				<li class="divider"></li>
+				<li><a href="login.html">Login Form</a></li>
+				<li><a href="registration.html">Registration Form</a></li>
+				<li><a href="elements.html">Elements</a></li>
+				<li class="active"><a href="#">Active Link</a></li>
+				<li class="divider"></li>
+				<li><i class="fa fa-sign-out"></i>  <a href="#">Log Out</a></li>
+			</ul>
+
+		</div>
+
+	</div>
+	</nav>
+	<!-- /TOP NAVBAR -->
+
+
+	<!-- SIDEBAR -->
+	<aside id="page-sidebar" ng-controller="sidebarCtrl">
+
+		<div class="menu-section">
+			<h2>Sidebar Heading</h2>
+
+			<ul>
+				<li class="active"> <!-- class="active" => menu opened -->
+					<span class="fa fa-cog"></span>
+					<a ng-click="toggleChild($event)">Child Menu <span class="fa fa-chevron-down"></span></a>
+					<ul class="child">
+						<li><a href="#">Dashboard</a></li>
+						<li><a href="#">Very long text will apply CSS text-overflow: ellipsis; e.g. text will end with 3 dots.</a></li>
+						<li class="active"><a href="#">Active Page</a></li> <!-- li class="active" => active page -->
+
+						<!-- grandchild menu -->
+						<li class="grandchild active"> <!-- class="grandchild active" => menu opened -->
+							<a ng-click="toggleGrandChild($event)"><span class="fa fa-chevron-down"></span> Grandchild menu</a>
+							<ul>
+								<li><a href="#">Edit Details</a></li>
+								<li class="active"><a href="#">Active Link</a></li> <!-- active page -->
+								<li><a href="#">Some very long text here bla bla blaaaaaaaaaaaaaaaaaaaaaaa</a></li>
+							</ul>
+						</li>
+
+					</ul>
+				</li>
+
+				<li>
+					<i class="fa fa-calculator"></i>
+					<a ng-click="toggleChild($event)">Mongo Module <span class="fa fa-chevron-down"></span></a>
+					<ul class="child">
+						<li><a href="#">Databases</a></li>
+						<li><a href="#">Collections</a></li>
+						<li><a href="#">Fields</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<span class="fa fa-user"></span>
+					<a ng-click="toggleChild($event)">User <span class="fa fa-chevron-down"></span></a>
+					<ul class="child">
+						<li><a href="#">Profile</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Likes</a></li>
+						<li><a href="#">Friends</a></li>
+						<li><a href="#">Photos</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Edit</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+
+	</aside>
+	<!-- /SIDEBAR -->
+
+
+	<!-- CONTENT -->
+	<main id="page-content" ng-controller="mainCtrl" class="container-fluid {{hidesidebarClass}}">
+		<div class="row">
+			<div class="col-sm-12">
+				<button id="toggleSidebar" class="btn btn-md btn-link" ng-click="toggleSidebar()"><i class="fa fa-bars"></i></button>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+					<h1>Heading</h1>
+
+
+			</div>
+		</div>
+	</main>
+	<!-- /CONTENT -->
+
+
+
+	<!-- JS libs -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+
+	<!-- Angular app -->
+	<script src="ng.js"></script>
+
+
+</body>
+</html>
